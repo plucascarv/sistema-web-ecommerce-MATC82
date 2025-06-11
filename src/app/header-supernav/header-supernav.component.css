@@ -48,7 +48,7 @@
 }
 
 .supernav-lang-curr #language::before {
-  content: url("");
+  content: "";
   border-radius: 50%;
   width: 8px;
   height: 8px;
