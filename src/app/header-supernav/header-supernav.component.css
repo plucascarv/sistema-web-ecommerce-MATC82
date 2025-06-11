@@ -1,0 +1,9 @@
+.supernav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.supernav-info, .supernav-lang-curr, .supernav-button, .hotline {
+  display: flex;
+  gap: 16px;
+}
