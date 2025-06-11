@@ -1,4 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* STYLE RESET */
 * {
   margin: 0;
   padding: 0;
@@ -9,6 +11,17 @@ body {
   background: #e2e4eb;
 }
 
+button, select {
+  background: none;
+  border: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* UTILIDADES*/
 .container {
   box-sizing: border-box;
   max-width: 1200px;
