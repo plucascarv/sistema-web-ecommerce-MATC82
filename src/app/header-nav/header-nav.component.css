@@ -1,0 +1,77 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+  background-color: white;
+  border-radius: 0 0 8px 8px;
+}
+
+.nav-start, .nav-end, .nav-menu, .nav-label {
+  display: flex;
+  align-items: center;
+}
+
+.nav-start {
+  gap: 80px;
+}
+
+.nav-menu {
+  gap: 20px;
+}
+
+.logo {
+  width: 48px;
+  height: 48px;
+  margin-right: 8px;
+}
+
+.nav-menu a {
+  font-weight: bold;
+}
+
+.nav-menu a::after {
+  content: "";
+  margin-left: 6px;
+}
+
+.nav-end {
+  gap: 16px;
+}
+
+.nav-end-buttons {
+  display: flex;
+  gap: 12px;
+}
+.nav-end-buttons button, .cart button {
+  display: block;
+  background: #e2e4eb;
+  height: 36px;
+  width: 36px;
+  border-radius: 50%;
+}
+
+.perfil {
+  display: flex;
+  flex-direction: column;
+  margin-right: 24px;
+}
+
+.perfil span, .cart-info span:first-child {
+  color: #666;
+  font-size: .75rem;
+}
+
+.cart {
+  display: flex;
+  gap: 8px;
+}
+
+.cart-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.cart-info span:last-child {
+  font-weight: bold;
+}

@@ -6,10 +6,6 @@
   border-radius: 8px 8px 0 0;
 }
 
-.supernav button, select {
-  cursor: pointer;
-}
-
 .supernav-info, .supernav-lang-curr, .supernav-button, .hotline {
   display: flex;
   gap: 16px;
