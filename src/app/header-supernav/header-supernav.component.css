@@ -1,9 +1,56 @@
 .supernav {
   display: flex;
   justify-content: space-between;
+  padding: 16px 24px;
+  background-color: white;
+  border-radius: 8px 8px 0 0;
+}
+
+.supernav button, select {
+  cursor: pointer;
 }
 
 .supernav-info, .supernav-lang-curr, .supernav-button, .hotline {
   display: flex;
   gap: 16px;
+  align-items: center;
+}
+
+.hotline {
+  font-size: 1rem;
+}
+
+.hotline-sign {
+  padding: 8px;
+  background: #e2e4eb;
+  border-radius: 8px;
+}
+
+.supernav-info {
+  gap: 36px;
+}
+
+.supernav-lang-curr {
+  gap: 0;
+}
+
+.supernav-button span, .supernav-lang-curr {
+  font-size: .85rem;
+}
+
+.supernav-lang-curr #currency {
+  border-right: solid 1px #e2e4eb;
+}
+
+.supernav-lang-curr #language {
+  margin-left: 4px;
+  position: relative;
+}
+
+.supernav-lang-curr #language::before {
+  content: "";
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  position: absolute;
 }
