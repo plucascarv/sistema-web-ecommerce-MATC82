@@ -2,12 +2,8 @@
   display: flex;
   justify-content: space-between;
   padding: 16px 24px;
-  background-color: white;
-  border-radius: 8px 8px 0 0;
-}
-
-.supernav button, select {
-  cursor: pointer;
+  background-color: var(--c0);
+  border-radius: 10px 10px 0 0;
 }
 
 .supernav-info, .supernav-lang-curr, .supernav-button, .hotline {
@@ -22,7 +18,7 @@
 
 .hotline-sign {
   padding: 8px;
-  background: #e2e4eb;
+  background: var(--c1);
   border-radius: 8px;
 }
 
@@ -39,7 +35,7 @@
 }
 
 .supernav-lang-curr #currency {
-  border-right: solid 1px #e2e4eb;
+  border-right: solid 1px var(--c1);
 }
 
 .supernav-lang-curr #language {
