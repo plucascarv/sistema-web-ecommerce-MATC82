@@ -35,6 +35,11 @@
   color: var(--c2);
 }
 
+.search-cupom a {
+  transform: 0.1s;  
+}
+
 .search-cupom a:hover {
-  font-weight: bold;
+  color: var(--c1);
+  transform: scale(1.25);
 }
