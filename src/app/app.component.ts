@@ -4,10 +4,11 @@ import { CommonModule } from '@angular/common';
 import { HeaderNavComponent } from './header-nav/header-nav.component';
 import { HeaderSupernavComponent } from "./header-supernav/header-supernav.component";
 import { SearchBarComponent } from './search-bar/search-bar.component';
+import { BrandsCategoriesComponent } from './brands-categories/brands-categories.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, CommonModule, HeaderNavComponent, HeaderSupernavComponent, SearchBarComponent],
+  imports: [RouterOutlet, CommonModule, HeaderNavComponent, HeaderSupernavComponent, SearchBarComponent, BrandsCategoriesComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

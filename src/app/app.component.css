@@ -4,7 +4,7 @@
 
 .destaques {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   gap: 16px;
   margin-top: 16px;
   align-items: stretch;
@@ -49,11 +49,10 @@
   background: var(--c0); /* Nesse elemento colocamos a foto do produto */
   border-radius: 10px;
   grid-column: span 2;
+  padding: 48px 48px 0px 48px;
   display: flex;
   flex-direction: column;
-  align-items: start;
   gap: 24px;
-  padding: 48px 48px 0px 48px;
 }
 
 .produto-principal h2 {
@@ -73,6 +72,7 @@
   background: var(--c1);
   border-radius: 10px;
   font-weight: bold;
+  align-self: flex-start;
 }
 
 .produto-secundario {
