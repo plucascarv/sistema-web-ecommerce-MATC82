@@ -1,0 +1,159 @@
+.container.destaques {
+  padding: 0;
+}
+
+.destaques {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.promo-nav {
+  background: var(--c0);
+  border-radius: 10px;
+  padding: 16px 86px 36px 48px;
+  font-size: .85rem;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.promo-nav h2 {
+  font-size: .85rem;
+  font-weight: bold;
+  color: var(--c3);
+}
+
+.promo-nav li {
+  font-weight: bold;
+}
+
+.promo-nav li:hover {
+  color: var(--c2);
+}
+
+.promo-nav li + li {
+  margin-top: 16px;
+}
+
+.produtos-destaque {
+  grid-column: span 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.produto-principal {
+  background: var(--c0); /* Nesse elemento colocamos a foto do produto */
+  border-radius: 10px;
+  grid-column: span 2;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 24px;
+  padding: 48px 48px 0px 48px;
+}
+
+.produto-principal h2 {
+  font-size: 1.8rem;
+}
+
+.produto-principal span {
+  padding-left: 24px;
+  color: var(--c2);
+  font-size: .8rem;
+  line-height: 1.5;
+  max-width: 24ch;
+}
+
+.produto-principal button {
+  padding: 8px 16px;
+  background: var(--c1);
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.produto-secundario {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: start;
+  padding: 16px;
+  background: var(--c0); /* Retirar daqui e adicionar background com url em .secundario 1 e 2 */
+  border-radius: 10px;
+}
+
+.produto-secundario button {
+  text-decoration: underline;
+  color: var(--c3);
+  font-weight: bold;
+}
+
+.sec-text h3 {
+  font-size: 1rem;
+}
+
+.sec-text span {
+  font-size: .9rem;
+}
+
+.sec-text span.price {
+  color: var(--c3);
+}
+
+.sec-text h3, span {
+  font-weight: bold;
+}
+
+.ads {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.ad-tipo1 {
+  background: var(--c0); /* Separar e adicionar foto do produto como url */
+  border-radius: 10px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.ad-tipo1 span, .ad-tipo2 span {
+  font-size: .8rem;
+  margin-bottom: 8px;
+}
+
+.ad-tipo1 h3, .ad-tipo2 h3 {
+  font-weight: bold;
+  margin-bottom: 48px;
+}
+
+.ad-tipo1 button {
+  background: var(--c2);
+  border-radius: 10px;
+  color: var(--c0);
+  padding: 8px;
+  font-weight: bold;
+}
+
+.ad-tipo2 {
+  background: var(--c2); /* Separar e adicionar foto do produto como url */
+  border-radius: 10px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  color: var(--c0);
+}
+
+.ad-tipo2 p {
+  font-size: .8rem;
+  color: var(--c1);
+}
+
+.ad-tipo2 span.price {
+  color: lightgreen;
+}
