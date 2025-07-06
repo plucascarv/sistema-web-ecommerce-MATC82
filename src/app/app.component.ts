@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { CommonModule } from '@angular/common';
-import { HeaderNavComponent } from './header-nav/header-nav.component';
-import { HeaderSupernavComponent } from "./header-supernav/header-supernav.component";
-import { SearchBarComponent } from './search-bar/search-bar.component';
-import { BrandsCategoriesComponent } from './brands-categories/brands-categories.component';
-import { MainComponent } from './main/main.component';
+import { HeaderNavComponent } from './header/header-nav/header-nav.component';
+import { HeaderSupernavComponent } from "./header/header-supernav/header-supernav.component";
+import { SearchBarComponent } from './header/search-bar/search-bar.component';
+import { BrandsCategoriesComponent } from './homepage/brands-categories/brands-categories.component';
+import { MainComponent } from './homepage/main/main.component';
 
 @Component({
   selector: 'app-root',
