@@ -5,13 +5,15 @@ import { HeaderNavComponent } from './header-nav/header-nav.component';
 import { HeaderSupernavComponent } from "./header-supernav/header-supernav.component";
 import { SearchBarComponent } from './search-bar/search-bar.component';
 import { BrandsCategoriesComponent } from './brands-categories/brands-categories.component';
+import { MainComponent } from './main/main.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, CommonModule, HeaderNavComponent, HeaderSupernavComponent, SearchBarComponent, BrandsCategoriesComponent],
+  imports: [RouterOutlet, CommonModule, HeaderNavComponent, HeaderSupernavComponent, SearchBarComponent, BrandsCategoriesComponent, MainComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
+
 export class AppComponent {
   public title = 'app-ecommerce-web';
 

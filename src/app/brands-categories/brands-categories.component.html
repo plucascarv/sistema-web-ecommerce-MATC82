@@ -6,9 +6,9 @@
     </div>
 
     <ul>
-      <li>
-        <a href="">Teste</a>
-      </li>
+      @for (brand of brands; track $index) {
+        <li><img src={{brand}} alt=""></li>
+      }
     </ul>
   </div>
 

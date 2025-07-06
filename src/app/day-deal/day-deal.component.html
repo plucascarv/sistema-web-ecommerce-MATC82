@@ -1,0 +1,53 @@
+<section>
+  <div class="title-bg"><h1 class="title">OFERTA DO DIA</h1></div>
+
+  <div class="product">
+
+    <div class="product-gallery">
+      @for (foto of gallery; track $index) {
+        <img src={{foto}} alt="" (click)="select()">
+      }
+    </div>
+
+    <div class="product-img">
+      <img src="" alt="" [NgModel]="main-img">
+      <span>ECONOMIZE<br>{{sale}}</span>
+    </div>
+
+    <div class="product-info">
+      <h2 class="product-name">{{product}}</h2>
+      <span>{{price}}</span>
+
+      <div class="product-features"><ul>
+        @for (feature of features; track $index) {
+          <li>{{feature}}</li>
+        }
+      </ul></div>
+
+      <span>FRETE GRÁTIS</span>
+
+      <div class="product-time">
+        <p>A PROMOÇÃO VAI ATÉ</p>
+        <!-- TODO: Incluir timer -->
+      </div>
+
+      <span class="product-count">Vendidos: {{sold}}/{{qtd}}</span>
+    </div>
+  </div>
+</section>
+
+<!-- TODO: Montar componente para anúncios, consumindo api de produtos -->
+<div class="ads">
+  <div class="ad-tipo1">
+    <span>MARCA</span>
+    <h3>Nome Deste Produto</h3>
+    <button>COMPRAR</button>
+  </div>
+
+  <a href="./" class="ad-tipo2">
+    <span>MARCA</span>
+    <h3>NOME DO PRODUTO</h3>
+    <p>A PARTIR DE</p>
+    <span class="price">R$000,00</span>
+  </a>
+</div>
