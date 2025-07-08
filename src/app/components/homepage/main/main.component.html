@@ -4,7 +4,7 @@
 
     <ul>
       @for (item of categories; track $index) {
-        <li><a href="">{{item}}</a></li>
+        <li (click)="navitageToCategorie(item)">={{item}}</li>
       }
     </ul>
   </nav>
