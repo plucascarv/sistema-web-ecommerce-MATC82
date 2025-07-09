@@ -1,3 +1,4 @@
+<!-- TODO: criar elementos brands e categories e função de navigate em type -->
 <section class="brands-categories container">
   <div class="brands">
     <div class="intro">
@@ -7,7 +8,7 @@
 
     <ul>
       @for (brand of brands; track $index) {
-        <li><img src={{brand}} alt=""></li>
+        <li><img [src]="brand" alt=""></li>
       }
     </ul>
   </div>
@@ -19,33 +20,12 @@
     </div>
 
     <ul>
-      <li>
-        <a href="">
-          <img src="" alt="">
-          <span>Notebooks</span>
-        </a>
-      </li>
-
-      <li>
-        <a href="">
-          <img src="" alt="">
-          <span>Computadores</span>
-        </a>
-      </li>
-
-      <li>
-        <a href="">
-          <img src="" alt="">
-          <span>Jogos</span>
-        </a>
-      </li>
-
-      <li>
-        <a href="">
-          <img src="" alt="">
-          <span>Peças</span>
-        </a>
-      </li>
+      @for (category of categories; track $index) {
+        <li (click)="navigateToPage(category)">
+          <img [src]="category.img" [alt]="category.name">
+          <p>{{category.name}}</p>
+        </li>
+      }
     </ul>
   </div>
 </section>

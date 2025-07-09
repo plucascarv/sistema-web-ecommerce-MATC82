@@ -1,0 +1,20 @@
+<div class="banner">
+  <div class="banner-head">
+    <h1 class="banner-title">{{title}}</h1>
+    <span>Veja Mais</span> <!-- TODO: click rout navigate -->
+  </div>
+
+  <div class="banner-photo"><img [src]="photo" alt=""></div>
+
+  <hr>
+
+  <div class="banner-products"><ul>
+    @for (product of products; track $index) {
+      <li>
+        <img [src]="product.img" [alt]="product.name">
+        <h3>{{product.name}}</h3>
+        <span>{{product.qtd}} itens</span>
+      </li>
+    }
+  </ul></div>
+</div>

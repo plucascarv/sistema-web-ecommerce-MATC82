@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-category-banner',
@@ -7,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrl: './category-banner.component.css'
 })
 export class CategoryBannerComponent {
-
+  @Input() title!: string;
+  @Input() photo!: string;
+  @Input() products!: {name:string, qtd:number, img:string}[];
 }
