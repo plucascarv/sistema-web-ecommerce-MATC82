@@ -26,7 +26,7 @@ export class BannersSectionComponent {
       photo: '',
       products: [
         {name: 'Desktops', qtd: 14, img: '' },
-        {name: 'Notebooks', qtd: 32, img: '' },
+        {name: 'Notebooks', qtd: 74, img: '' },
         {name: 'Consoles', qtd: 8, img: '' },
         {name: 'Portáteis', qtd: 9, img: '' },
       ]
