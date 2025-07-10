@@ -9,7 +9,7 @@
     <div class="adress">
       <p>Rua Ali Perto, 999, Ondina, Salvador</p>
       <p>Bahia, Brasil</p>
-      <a href="mailto: contato@mercurio.com.br">contato@mercurio.com.br</a>
+      <a href="mailto: contato@mercurio.com.br">contato&#64;mercurio.com.br</a>
     </div>
 
     <!-- Acioniar ícones para redes sociais -->
@@ -26,7 +26,7 @@
     <h2>PRINCIPAIS CATEGORIAS</h2>
     <ul>
       @for (item of categories; track $index) {
-        <li (click)="navitageToCategorie(item)">={{item}}</li>
+        <li (click)="navigateToPage(item)">{{item}}</li>
       }
     </ul>
   </div>
@@ -87,7 +87,7 @@
     <hr>
 
     <div class="footer-underline">
-      <p>Mercurio @ 2025. Todos os direitos reservados.</p>
+      <p>Mercurio &#64; 2025. Todos os direitos reservados.</p>
       <div class="footer-underline-pay">
         <img src="" alt="">
         <img src="" alt="">

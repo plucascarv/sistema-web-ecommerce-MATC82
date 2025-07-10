@@ -21,7 +21,7 @@
 
     <ul>
       @for (category of categories; track $index) {
-        <li (click)="navigateToPage(category)">
+        <li (click)="navigateToPage(category.name)">
           <img [src]="category.img" [alt]="category.name">
           <p>{{category.name}}</p>
         </li>
