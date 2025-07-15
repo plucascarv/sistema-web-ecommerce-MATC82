@@ -1,0 +1,145 @@
+/* GRID + BG SETTING */
+.footer-bg {
+  background: white;
+}
+
+footer {
+  margin-top: 120px;
+  padding: 64px 0px;
+  display: grid;
+  grid-template-columns: 2fr 1.2fr 0.8fr 1fr 1fr
+}
+
+/* COMMON STYLES */
+footer h2 {
+  font-weight: bold;
+  font-size: 1.125rem;
+  margin-bottom: 16px;
+}
+
+footer li {
+  font-size: .875rem;
+  color: #666;
+  padding: 4px 0px;
+  margin: 2px 0px;
+}
+
+footer li:hover {
+  color: black;
+}
+
+/* TOP HAlF */
+.support {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.support span {
+  font-size: .875rem;
+}
+
+.support a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--c3);
+}
+
+.adress {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin: 16px 0px;
+}
+
+.socials ul {
+  display: flex;
+  gap: 8px;
+}
+
+.socials li {
+  background: var(--c1);
+  width: 35px;
+  height: 35px;
+  box-sizing: border-box;
+  padding: 8px;
+  border-radius: 50%;
+}
+
+/* BOTTOM HAlF */
+.footer-extra {
+  grid-column: span 5;
+  display: grid;
+  grid-template-columns: .35fr .7fr;
+  margin-top: 48px;
+}
+
+.footer-lang-curr {
+  display: flex;
+  gap: 8px;
+}
+
+select {
+  background: white;
+  border: solid 2px var(--c1);
+  border-radius: 8px;
+  padding: 0px 8px;
+  max-height: 40px;
+  width: 90px;
+}
+
+.footer-signup h2 span{
+  color: #ff6b35;
+}
+
+.footer-signup form {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: solid 2px var(--c1);
+  padding: 8px 0px;
+}
+
+.footer-signup button, input {
+  margin: 0px 16px;
+}
+
+.footer-signup form button {
+  color: #ff6b35;
+}
+
+.footer-signup input {
+  background: none;
+  outline: none;
+  border: none;
+  font-size: .875rem;
+}
+
+.fineline {
+  font-size: .875rem;
+  color: var(--c2);
+  font-style: italic;
+}
+
+.fineline a {
+  color: black;
+  border-bottom: solid 1px black;
+}
+
+.footer-underline {
+  grid-column: span 2;
+  border-top: solid 1px var(--c1);
+  margin-top: 64px;
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 0px;
+}
+
+.footer-underline p {
+  font-size: .875rem;
+  color: var(--c2);
+}
+
+.footer-underline a {
+  font-size: .875rem;
+  color: var(--c3);
+}

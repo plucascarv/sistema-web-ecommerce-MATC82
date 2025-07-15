@@ -1,0 +1,19 @@
+.title {
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin: 24px 0;
+}
+
+.txt, a {
+  font-size: .9rem;
+  color: #666;
+  text-align: justify;
+}
+
+.txt + .txt {
+  margin: 48px 48px 24px 0px;
+}
+
+a:hover {
+  color: black;
+}

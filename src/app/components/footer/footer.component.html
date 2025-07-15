@@ -1,101 +1,101 @@
-<footer>
-  <div class="col-1">
-    <h2>MERCURIO - LOJA GAMER N°1 DO BRASIL</h2>
-    <div class="suport">
-      <span>CONTATO (24/7)</span>
-      <a href="tel: +55719999-9999">(+55) 71 9999-9999</a>
-    </div>
-
-    <div class="adress">
-      <p>Rua Ali Perto, 999, Ondina, Salvador</p>
-      <p>Bahia, Brasil</p>
-      <a href="mailto: contato@mercurio.com.br">contato&#64;mercurio.com.br</a>
-    </div>
-
-    <!-- Acioniar ícones para redes sociais -->
-    <div class="socials">
-      <a href=""><img src="" alt=""></a>
-      <a href=""><img src="" alt=""></a>
-      <a href=""><img src="" alt=""></a>
-      <a href=""><img src="" alt=""></a>
-      <a href=""><img src="" alt=""></a>
-    </div>
-  </div>
-
-  <div class="col-2">
-    <h2>PRINCIPAIS CATEGORIAS</h2>
-    <ul>
-      @for (item of categories; track $index) {
-        <li (click)="navigateToPage(item)">{{item}}</li>
-      }
-    </ul>
-  </div>
-
-  <div class="col-3">
-    <h2>INFO</h2>
-    <ul>
-      <li>Sobre a Mercurio</li>
-      <li>Contato</li>
-      <li>Fórum</li>
-    </ul>
-  </div>
-
-  <div class="col-4">
-    <h2>HELP CENTER</h2>
-    <ul>
-      <li>Suporte ao consumidor</li>
-      <li>Termos & Condições</li>
-      <li>FAQs</li>
-      <li>Minha Conta</li>
-      <li>Suporte com Produto</li>
-    </ul>
-  </div>
-
-  <div class="col-5">
-    <h2>PARCERIA</h2>
-    <ul>
-      <li>Tornar-se Vendedor</li>
-      <li>Afilie-se</li>
-      <li>Anuncie na Mercurio</li>
-      <li>Tornar-se Parceiro</li>
-    </ul>
-  </div>
-
-  <div class="footer-extra">
-    <form class="footer-lang-curr">
-      <select name="currency" id="currency" aria-placeholder="BRL">
-        <option value="brl">BRL</option>
-        <option value="usd">USD</option>
-      </select>
-
-      <select name="language" id="language" aria-placeholder="PT-BR">
-        <option value="pt-br">PT-BR</option>
-        <option value="eng">ENG</option>
-        <option value="fr">FR</option>
-      </select>
-    </form>
-
-    <div class="footer-signup">
-      <h2>INCREVA-SE & GANHE <span>10% DE DESCONTO</span> NA SUA PRIMEIRA COMPRA</h2>
-      <form action="">
-        <input type="text" placeholder="Insira seu email...">
-        <button>INSCREVER-SE</button>
-      </form>
-      <span>Ao se inscrever, você concorda com nossos <a>Termos & Condições</a></span> <!-- TODO: configurar router-outlet -->
-    </div>
-
-    <hr>
-
-    <div class="footer-underline">
-      <p>Mercurio &#64; 2025. Todos os direitos reservados.</p>
-      <div class="footer-underline-pay">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
+<div class="footer-bg">
+  <footer class="container">
+    <div class="col-1">
+      <h2>MERCURIO - LOJA GAMER N°1 DO BRASIL</h2>
+      <div class="support">
+        <span>CONTATO (24/7)</span>
+        <a href="tel: +557199999-9999">+55 (71) 99999-9999</a>
       </div>
-      <a>Versão Mobile</a>
+      
+      <div class="adress">
+        <p>Rua Ali Perto, 999, Ondina, Salvador</p>
+        <p>Bahia, Brasil</p>
+        <a href="mailto: contato@mercurio.com.br">contato&#64;mercurio.com.br</a>
+      </div>
+      
+      <!-- Acioniar ícones para redes sociais -->
+      <div class="socials">
+        <ul>
+          @for (social of socials; track $index) {
+            <li><img [src]="social" alt=""></li>
+          }
+        </ul>
+      </div>
     </div>
-  </div>
-</footer>
+    
+    <div class="col-2">
+      <h2>PRINCIPAIS CATEGORIAS</h2>
+      <ul>
+        @for (item of categories; track $index) {
+          <li (click)="navigateToPage(item)">{{item}}</li>
+        }
+      </ul>
+    </div>
+    
+    <div class="col-3">
+      <h2>INFO</h2>
+      <ul>
+        <li>Sobre a Mercurio</li>
+        <li>Contato</li>
+        <li>Fórum</li>
+      </ul>
+    </div>
+    
+    <div class="col-4">
+      <h2>HELP CENTER</h2>
+      <ul>
+        <li>Suporte ao consumidor</li>
+        <li>Termos & Condições</li>
+        <li>FAQs</li>
+        <li>Minha Conta</li>
+        <li>Suporte com Produto</li>
+      </ul>
+    </div>
+    
+    <div class="col-5">
+      <h2>PARCERIA</h2>
+      <ul>
+        <li>Tornar-se Vendedor</li>
+        <li>Afilie-se</li>
+        <li>Anuncie na Mercurio</li>
+        <li>Tornar-se Parceiro</li>
+      </ul>
+    </div>
+    
+    <div class="footer-extra">
+      <form class="footer-lang-curr">
+        <select name="currency" id="currency" aria-placeholder="BRL">
+          <option value="brl">BRL</option>
+          <option value="usd">USD</option>
+        </select>
+        
+        <select name="language" id="language" aria-placeholder="PT-BR">
+          <option value="pt-br">PT-BR</option>
+          <option value="eng">ENG</option>
+          <option value="fr">FR</option>
+        </select>
+      </form>
+      
+      <div class="footer-signup">
+        <h2>INCREVA-SE & GANHE <span>10% DE DESCONTO</span> NA SUA PRIMEIRA COMPRA</h2>
+        <form action="">
+          <input type="text" placeholder="Insira seu email...">
+          <button [routerLink]="['/singup']">INSCREVER-SE</button>
+        </form>
+        <span class="fineline">Ao se inscrever, você concorda com nossos <a [routerLink]="['/terms']">Termos & Condições</a></span>
+      </div>
+            
+      <div class="footer-underline">
+        <p><strong>Mercurio</strong> &#64; 2025. Todos os direitos reservados.</p>
+        <div class="footer-underline-pay">
+          <img src="" alt="">
+          <img src="" alt="">
+          <img src="" alt="">
+          <img src="" alt="">
+          <img src="" alt="">
+        </div>
+        <a>Versão Mobile</a>
+      </div>
+    </div>
+  </footer>
+</div>
