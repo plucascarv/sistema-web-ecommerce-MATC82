@@ -1,0 +1,15 @@
+.middleline {
+  text-align: center;
+  background: var(--c3);
+  border-radius: 8px;
+  padding: 64px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  color: var(--c1);
+  font-size: 1.125rem;
+}
+
+.middleline span, .middleline a {
+  color: var(--c4);
+  font-weight: bold;
+}

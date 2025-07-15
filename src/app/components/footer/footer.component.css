@@ -80,7 +80,7 @@ footer li:hover {
 }
 
 select {
-  background: white;
+  background: var(--c0);
   border: solid 2px var(--c1);
   border-radius: 8px;
   padding: 0px 8px;
@@ -89,7 +89,7 @@ select {
 }
 
 .footer-signup h2 span{
-  color: #ff6b35;
+  color: var(--c4);
 }
 
 .footer-signup form {
@@ -104,7 +104,7 @@ select {
 }
 
 .footer-signup form button {
-  color: #ff6b35;
+  color: var(--c4);
 }
 
 .footer-signup input {

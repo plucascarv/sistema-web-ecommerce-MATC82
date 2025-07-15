@@ -14,7 +14,6 @@ ul {
   gap: 12px;
 }
 
-
 .brands, .categories {
   background: var(--c0);
   border-radius: 10px;
@@ -37,6 +36,17 @@ ul {
   justify-content: space-around;
   gap: 12px;
   text-align: center;
+}
+
+.brands ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 6px;
+}
+
+.brands li {
+  width: 90px;
+  height: 35px;
 }
 
 .intro {
