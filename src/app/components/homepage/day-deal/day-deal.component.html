@@ -37,20 +37,21 @@
     </div>
   </div>
 
-  <!-- TODO: Montar componente para anúncios, consumindo api de produtos -->
   <div class="ads">
-    <div class="ad-tipo1">
-      <span>MARCA</span>
-      <h3>Nome Deste Produto</h3>
-      <button>COMPRAR</button>
-    </div>
+    <app-ad
+      type="type1"
+      brand="MARCA"
+      name="Nome Deste Produto">
+    </app-ad>
 
-    <a href="./" class="ad-tipo2">
-      <span>MARCA</span>
-      <h3>NOME DO PRODUTO</h3>
-      <p>A PARTIR DE</p>
-      <span class="price">R$000,00</span>
-    </a>
+    <app-ad
+      type="type2"
+      brand="MARCA"
+      name="NOME DO PRODUTO"
+      price="R$000,00"
+      link="./">
+    </app-ad>
   </div>
+
 </section>
 

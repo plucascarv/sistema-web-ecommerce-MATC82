@@ -110,54 +110,6 @@
 .ads {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  height: 100%;
   gap: 12px;
-}
-
-.ad-tipo1 {
-  background: var(--c0); /* Separar e adicionar foto do produto como url */
-  border-radius: 10px;
-  padding: 24px;
-  display: flex;
-  flex-direction: column;
-  align-items: end;
-  flex: 1;
-}
-
-.ad-tipo1 span, .ad-tipo2 span {
-  font-size: .8rem;
-  margin-bottom: 8px;
-}
-
-.ad-tipo1 h3, .ad-tipo2 h3 {
-  font-weight: bold;
-  margin-bottom: 48px;
-}
-
-.ad-tipo1 button {
-  background: var(--c2);
-  border-radius: 10px;
-  color: var(--c0);
-  padding: 8px;
-  font-weight: bold;
-}
-
-.ad-tipo2 {
-  background: var(--c2); /* Separar e adicionar foto do produto como url */
-  border-radius: 10px;
-  padding: 24px;
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  color: var(--c0);
-  flex: 1;
-}
-
-.ad-tipo2 p {
-  font-size: .8rem;
-  color: var(--c1);
-}
-
-.ad-tipo2 span.price {
-  color: lightgreen;
 }

@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { AdComponent } from '../../ad/ad.component';
 
 @Component({
   selector: 'app-main',
-  imports: [],
+  imports: [AdComponent],
   templateUrl: './main.component.html',
   styleUrl: './main.component.css'
 })
