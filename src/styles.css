@@ -46,6 +46,7 @@ li {
   --c2: #666;
   --c3: #4B3EC4;
   --c4: #ff6b35;
+  --c5: #F1352B;
 }
 
 .c0 {
@@ -62,6 +63,9 @@ li {
 }
 .c4 {
   color: var(--c4);
+}
+.c5 {
+  color: var(--c5);
 }
 
 /* UTILIDADES*/

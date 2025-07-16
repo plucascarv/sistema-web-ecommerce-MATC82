@@ -1,38 +1,47 @@
-<section class="container">
+<section class="container daydeal">
   <div class="deal">
     <div class="title-bg"><h1 class="title">OFERTA DO DIA</h1></div>
     
     <div class="product">
       <div class="product-gallery">
-        @for (foto of gallery; track $index) {
-          <img src={{foto}} alt="" (click)="select()">
+        @for (foto of product.gallery; track $index) {
+          <img [src]="foto" alt="" (click)="select(foto)">
         }
       </div>
       
       <div class="product-img">
-        <img src="" alt=""> <!-- TODO: Elemento de galeria dinâmica -->
-        <span>ECONOMIZE<br>{{sale}}</span>
+        <img [src]="main_img" [alt]="product.name">
+        <div class="sale">
+          <span>ECONOMIZE</span>
+          <p>R$699,00</p>
+        </div>
       </div>
       
       <div class="product-info">
-        <h2 class="product-name">{{product}}</h2>
-        <span>{{price}}</span>
+        <h2 class="product-name" [routerLink]="['products',product.name]">{{product.name}}</h2>
+        <p class="product-price">R$ {{product.price}} <span class="c2">5999,00</span></p>
         
-        <div class="product-features"><ul>
-          @for (feature of features; track $index) {
+        <ul class="product-features">
+          @for (feature of product.features; track $index) {
             <li>{{feature}}</li>
           }
-        </ul></div>
+        </ul>
         
-        <span>FRETE GRÁTIS</span>
+        <span class="product-shipping">FRETE GRÁTIS</span>
         
-        <div class="product-time">
-          <p>A PROMOÇÃO VAI ATÉ</p>
-          <!-- TODO: Incluir timer -->
+        <div class="product-extras">
+          <div class="extras-time">
+            <p>A PROMOÇÃO VAI ATÉ</p>
+            <span class="timer">{{timeLeft}}</span>
+          </div>
+
+          <hr>
+
+          <div class="extras-progress">
+            <progress value="25" max="87"></progress>
+            <span class="product-count">Vendidos: <strong>25/87</strong></span>
+          </div>
         </div>
-        
-        <progress value="25" max="87"></progress>
-        <span class="product-count">Vendidos: <strong>25/87</strong></span>
       </div>
     </div>
   </div>
@@ -52,6 +61,5 @@
       link="./">
     </app-ad>
   </div>
-
 </section>
 

@@ -4,10 +4,11 @@ import { MainComponent } from '../main/main.component';
 import { BrandsCategoriesComponent } from '../brands-categories/brands-categories.component';
 import { AboutComponent } from "../about/about.component";
 import { FooterComponent } from "../../footer/footer.component";
+import { DayDealComponent } from '../day-deal/day-deal.component';
 
 @Component({
   selector: 'app-home',
-  imports: [HeaderComponent, MainComponent, BrandsCategoriesComponent, AboutComponent, FooterComponent],
+  imports: [HeaderComponent, MainComponent, BrandsCategoriesComponent, AboutComponent, FooterComponent, DayDealComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })

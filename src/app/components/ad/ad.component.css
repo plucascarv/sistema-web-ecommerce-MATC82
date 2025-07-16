@@ -43,5 +43,5 @@
 }
 
 .ad-type2 span.price {
-  color: lightgreen;
+  color: var(--c3);
 }

@@ -1,0 +1,131 @@
+.daydeal {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 16px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  padding: 0;
+}
+
+.title-bg {
+  background: var(--c3);
+  border-radius: 8px;
+  padding: 18px 24px;
+}
+
+.title {
+  color: var(--c0);
+  font-weight: bold;
+}
+
+.product {
+  background: var(--c0);
+  border-radius: 8px;
+  padding: 48px 24px;
+  display: grid;
+  grid-template-columns: .5fr 2fr 2fr;
+  gap: 12px;
+}
+
+.product-gallery img {
+  height: 60px;
+}
+
+.product-img {
+  position: relative;
+  align-content: center;
+  justify-items: center;
+}
+
+.sale {
+  background: var(--c4);
+  color: var(--c0);
+  border-radius: 8px;
+  padding: 6px;
+  position: absolute;
+  top: -5px;
+}
+
+.sale span {
+  font-size: .65rem;
+}
+
+.product-info {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.product-name {
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: justify;
+  cursor: pointer;
+}
+
+.product-price {
+  font-size: 1.375rem;
+  color: var(--c5);
+  font-weight: bold;
+}
+
+.product-price span {
+  font-size: 1rem;
+  text-decoration: line-through;
+}
+
+.product-features {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.product-features li {
+  font-size: .875rem;
+  text-align: justify;
+  cursor: auto;
+}
+
+.product-features li::before {
+  content: "•";
+  display: inline-block;
+  margin-right: 4px;
+}
+
+.product-shipping {
+  font-size: .875rem;
+  padding: 8px;
+  color: var(--c4);
+  width: max-content;
+  border: solid 2px var(--c1);
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.extras, .extras-progress {
+  display: flex;
+  flex-direction: column;
+}
+
+.extras-timer  {
+  display: flex;
+  justify-content: space-between;
+}
+
+.extras-progress {
+  gap: 6px;
+}
+
+.extras-progress progress {
+  border-radius: 8px;
+}
+
+.extras hr {
+  padding: 4px;
+}
+
+.ads {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
