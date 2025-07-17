@@ -1,15 +1,17 @@
 <section class="new container">
   <div class="new-head">
-    <h1>NOVIDADES PARA VOCÊ</h1>
-    <span>Veja Mais</span>
+    <h1 class="title">NOVIDADES PARA VOCÊ</h1>
+    <span class="viewmore" [routerLink]="['news']">Veja Mais</span>
   </div>
 
   <ul class="new-list">
-    @for (item of newbrands; track $index) {
-      <div class="item-photo"><img src="" alt=""></div>
-      <h3 class="item-name">{{item.name}}</h3>
-      <span class="item-info">{{item.info}}</span>
-      <button class="buy-button" (click)="navigateToProduct(item)">COMPRE AGORA</button>
+    @for (item of items; track $index) {
+      <li class="list-item">
+        <div class="item-photo"><img [src]="item.img" alt=""></div>
+        <h3 class="item-name">{{item.name}}</h3>
+        <span class="item-info">{{item.info}}</span>
+        <button class="buy-button" [routerLink]="['product',item.name]">COMPRE AGORA</button>
+      </li>
     }
   </ul>
 </section>

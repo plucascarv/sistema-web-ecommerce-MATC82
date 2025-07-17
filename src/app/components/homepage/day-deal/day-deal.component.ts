@@ -46,7 +46,7 @@ export class DayDealComponent implements OnInit, OnDestroy{
     return num < 10 ? '0' + num : num.toString();
   }
 
-  main_img: string = "../../../../../public/deals/front.jpg";
+  main_img: string = "/deal/front.jpg";
   select(item:string) {
     this.main_img = item;
   }
@@ -59,10 +59,10 @@ export class DayDealComponent implements OnInit, OnDestroy{
       "Mais produtividade com maior autonomia: até 18 horas",
       "A CPU 8-core é 3,5 vezes mais rápida e está à altura dos projetos mais exigentes"],
     gallery: [
-      "../../../../../public/deals/front.jpg",
-      "../../../../../public/deals/top.jpg",
-      "../../../../../public/deals/side.jpg",
-      "../../../../../public/deals/closed.jpg",
+      "/deal/front.jpg",
+      "/deal/top.jpg",
+      "/deal/side.jpg",
+      "/deal/closed.jpg",
     ]
   }
 }
