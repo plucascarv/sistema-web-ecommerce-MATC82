@@ -29,11 +29,16 @@
 
 .nav-menu a {
   font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
 }
 
-.nav-menu a::after {
-  content: "";
-  margin-left: 6px;
+.nav-menu a img {
+  display: inline;
+  width: 16px;
+  height: 16px;
 }
 
 .nav-end {
@@ -79,4 +84,14 @@
 
 .cart-info span:last-child {
   font-weight: bold;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+
+button img {
+  width: 65%;
 }

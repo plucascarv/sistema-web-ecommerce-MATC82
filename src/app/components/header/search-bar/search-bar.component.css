@@ -41,6 +41,11 @@ select {
   color: var(--c2);
 }
 
+.search-bar img {
+  display: inline;
+  height: 16px;
+}
+
 .search-cupom a {
   transform: 0.1s;  
 }

@@ -8,7 +8,7 @@
   margin-top: 24px;
 }
 
-.best-of-top, .categories-item, .item-info {
+.best-of-top, .categories-item, .item-info, .best-of-head {
   display: flex;
   justify-content: space-between;
 }
@@ -17,4 +17,8 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 48px;
+}
+
+.item-info {
+  flex-direction: column;
 }
