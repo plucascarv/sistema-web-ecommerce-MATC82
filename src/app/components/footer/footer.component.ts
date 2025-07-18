@@ -18,9 +18,9 @@ export class FooterComponent {
   }
 
   socials:string[] = [
-    "../../../../public/socials/twitter.svg",
-    "../../../../public/socials/instagram.svg",
-    "../../../../public/socials/facebook.svg",
-    "../../../../public/socials/whatsapp.svg",
-    "../../../../public/socials/youtube.svg"];
+    "/socials/twitter.svg",
+    "/socials/instagram.svg",
+    "/socials/facebook.svg",
+    "/socials/whatsapp.svg",
+    "/socials/youtube.svg"];
 }

@@ -1,3 +1,9 @@
+select {
+  border: none;
+  outline: none;
+  background: none;
+}
+
 .search {
   background: var(--c3);
   border-radius: 10px;

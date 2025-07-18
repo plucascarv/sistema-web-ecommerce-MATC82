@@ -1,0 +1,20 @@
+.best-of {
+  background: var(--c0);
+  border-radius: 10px;
+  padding: 24px 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.best-of-top, .categories-item, .item-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.best-of-categories {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 48px;
+}

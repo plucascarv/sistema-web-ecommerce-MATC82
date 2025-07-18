@@ -11,21 +11,23 @@ export class BrandsCategoriesComponent {
   constructor(private router: Router) {}
   
   brands:string[] = [
-    "../../../../../public/brands/amd.svg",
-    "../../../../../public/brands/positivo.svg",
-    "../../../../../public/brands/corsair.svg",
-    "../../../../../public/brands/alienware.svg",
-    "../../../../../public/brands/logitech.svg",
-    "../../../../../public/brands/msi.svg",
-    "../../../../../public/brands/razer.svg",
-    "../../../../../public/brands/nvidia.svg"
+    "/brands/amd.svg",
+    "/brands/positivo.svg",
+    "/brands/corsair.svg",
+    "/brands/intel.svg",
+    "/brands/logitech.svg",
+    "/brands/msi.svg",
+    "/brands/razer.svg",
+    "/brands/oculus.svg",
+    "/brands/xbox.svg",
+    "/brands/nvidia.svg"
   ]
 
   categories = [
-    {name: "Notebooks", img:''},
-    {name: "PCs Gamer", img:''},
-    {name: "Headsets", img:''},
-    {name: "Monitores", img:''}
+    {name: "Notebooks", img:'/categories/notebooks.png'},
+    {name: "PCs Gamer", img:'/categories/pcs.png'},
+    {name: "Headsets", img:'/categories/headsets.png'},
+    {name: "Monitores", img:'/categories/monitores.jpg'}
   ]
 
   navigateToPage(item:string) {

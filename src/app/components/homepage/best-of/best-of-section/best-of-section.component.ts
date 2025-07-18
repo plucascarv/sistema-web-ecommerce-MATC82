@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { BestOfElementComponent } from '../best-of-element/best-of-element.component';
 
 @Component({
   selector: 'app-best-of-section',
-  imports: [BestOfElementComponent],
+  imports: [BestOfElementComponent, CommonModule],
   templateUrl: './best-of-section.component.html',
   styleUrl: './best-of-section.component.css'
 })
@@ -20,7 +21,9 @@ export class BestOfSectionComponent {
         {name: 'Alienware', qtd: 9, img: ''},
         {name: 'Usados', qtd: 45, img: ''}
       ],
-      products: [] // TODO: consumir esses elementos da api
+      products: [
+        {name: "MacBook Air 14", price:"4299,99", img:"/deal/front.png"}
+      ] // TODO: consumir esses elementos da api
     }
   ]
 }

@@ -1,22 +1,22 @@
 <!-- TODO: configurar rout outlet de navigate -->
-<div class="best-of">
+<div class="best-of container">
   <div class="best-of-head">
     <h1>{{title}}</h1>
-    <span (click)="navigateToPage()">Veja Mais</span> 
+    <span (click)="navigateToPage('products',title,null)" class="viewmore">Veja Mais</span> 
   </div>
   
-  <div>
+  <div class="best-of-top">
     <div class="best-of-banner"><img (src)="photo" alt=""></div>
 
     <ul class="best-of-categories">
       @for (item of categories; track $index) {
-        <li (click)="navigateToPage()">
-          <div class="items-info">
+        <li (click)="navigateToPage('products',title,item.name)" class="categories-item">
+          <div class="item-info">
             <h3 class="best-of-categories-title">{{item.name}}</h3>
             <span>{{item.qtd}} itens</span>
           </div>
 
-          <div class="best-of-categories-img"><img (src)="item.img" (alt)="item.name"></div>
+          <div class="best-of-categories-img"><img [src]="item.img" [alt]="item.name"></div>
         </li>
       }
     </ul>
@@ -27,7 +27,7 @@
   <div class="best-of-products"><ul class="best-of-products-list">
     @for (product of products; track $index) {
       <li>
-        <div class="products-img"><img (src)="product.img" (alt)="product.name"></div>
+        <div class="products-img"><img [src]="product.img" [alt]="product.name"></div>
         <h2 class="products-title">{{product.name}}</h2>
         <p class="products-price">{{product.price}}</p>
         <span class="shipping">FRETE GRÁTIS</span>

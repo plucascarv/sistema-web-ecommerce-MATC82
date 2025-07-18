@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-best-of-element',
@@ -7,6 +8,11 @@ import { Component, Input } from '@angular/core';
   styleUrl: './best-of-element.component.css'
 })
 export class BestOfElementComponent {
+  constructor(private router:Router) {}
+  navigateToPage(base:string,sec:string,third:string|null) {
+    this.router.navigate([base,sec,third]);
+  }
+
   @Input() title!: string;
   @Input() photo!: string;
   @Input() categories!: {name:string, qtd:number, img:string}[];
