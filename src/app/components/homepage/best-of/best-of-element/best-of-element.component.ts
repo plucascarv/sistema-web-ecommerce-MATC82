@@ -16,5 +16,6 @@ export class BestOfElementComponent {
   @Input() title!: string;
   @Input() photo!: string;
   @Input() categories!: {name:string, qtd:number, img:string}[];
-  @Input() products!: {name:string, price:number, img:string}[];
+  @Input() products!: {name:string, price:string, img:string}[];
+  @Input() banner!: {name:string, extra:string, img:string};
 }

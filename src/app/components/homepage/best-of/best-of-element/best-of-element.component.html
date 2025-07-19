@@ -6,7 +6,14 @@
   </div>
   
   <div class="best-of-top">
-    <div class="best-of-banner"><img (src)="photo" alt=""></div>
+    <div class="best-of-banner">
+      <div class="banner-info">
+        <h2 class="banner-title">{{banner.name}}</h2>
+        <span class="banner-extra">{{banner.extra}}</span>
+        <button class="banner-button" (click)="navigateToPage('products',title,banner.name)">COMPRE AGORA</button>
+      </div>
+      <div><img class="banner-img" [src]="banner.img" [alt]="banner.name"></div>
+    </div>
 
     <ul class="best-of-categories">
       @for (item of categories; track $index) {
@@ -16,7 +23,7 @@
             <span>{{item.qtd}} itens</span>
           </div>
 
-          <div class="best-of-categories-img"><img [src]="item.img" [alt]="item.name"></div>
+          <div ><img class="best-of-categories-img" [src]="item.img" [alt]="item.name"></div>
         </li>
       }
     </ul>
@@ -26,12 +33,16 @@
 
   <div class="best-of-products"><ul class="best-of-products-list">
     @for (product of products; track $index) {
-      <li>
-        <div class="products-img"><img [src]="product.img" [alt]="product.name"></div>
-        <h2 class="products-title">{{product.name}}</h2>
-        <p class="products-price">{{product.price}}</p>
-        <span class="shipping">FRETE GRÁTIS</span>
-        <span class="stock">Disponível</span>
+      <li class="products-item">
+        <div>
+          <div ><img class="products-img" [src]="product.img" [alt]="product.name"></div>
+          <h2 class="products-title">{{product.name}}</h2>
+          <p class="products-price">R$ {{product.price}}</p>
+        </div>
+        <div>
+          <span class="shipping">FRETE GRÁTIS</span>
+          <span class="stock"> <img src="/icons/check.svg" alt=""> Disponível</span>
+        </div>
       </li>
     }
   </ul></div>
