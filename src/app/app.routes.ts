@@ -3,8 +3,14 @@ import { HomeComponent } from './components/homepage/home/home.component';
 import { Component } from '@angular/core';
 
 export const routes: Routes = [
+  
   {
     path: '',
     component: HomeComponent
+  },
+  {
+    path: 'login',
+    loadComponent: () =>
+      import('./components/login/login.component').then(m => m.LoginComponent)
   }
 ];
