@@ -14,7 +14,7 @@ export class BannersSectionComponent {
   banners = [
     {
       title: 'PERIFÉRICOS',
-      photo: '',
+      photo: '/banners/perifericos/banner.png',
       products: [
         {name: 'Monitores', qtd: 28, img: '/banners/perifericos/monitor.png' },
         {name: 'Mouses', qtd: 12, img: '/banners/perifericos/mouse.png' },
@@ -24,7 +24,7 @@ export class BannersSectionComponent {
     },
     {
       title: 'GAMING',
-      photo: '',
+      photo: '/banners/gaming/banner.png',
       products: [
         {name: 'Desktops', qtd: 14, img: '/best-of/desktop.png' },
         {name: 'Notebooks', qtd: 74, img: '/banners/gaming/note.png' },
@@ -34,7 +34,7 @@ export class BannersSectionComponent {
     },
     {
       title: 'JOGOS',
-      photo: '',
+      photo: '/banners/jogos/banner.png',
       products: [
         {name: 'RPGs', qtd: 145, img: '/banners/jogos/rpg.jpg' },
         {name: 'Ação', qtd: 121, img: '/banners/jogos/action.jpg' },

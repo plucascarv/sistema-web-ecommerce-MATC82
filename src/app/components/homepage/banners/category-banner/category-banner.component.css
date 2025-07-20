@@ -27,6 +27,12 @@
   height: 235px;
   background: var(--c1);
   border-radius: 8px;
+  cursor: pointer;
+}
+
+.banner-photo img {
+  object-fit: contain;
+  border-radius: 8px;
 }
 
 .banner-products {

@@ -7,12 +7,7 @@
   
   <div class="best-of-top">
     <div class="best-of-banner">
-      <div class="banner-info">
-        <h2 class="banner-title">{{banner.name}}</h2>
-        <span class="banner-extra">{{banner.extra}}</span>
-        <button class="banner-button" (click)="navigateToPage('products',title,banner.name)">COMPRE AGORA</button>
-      </div>
-      <div><img class="banner-img" [src]="banner.img" [alt]="banner.name"></div>
+      <img class="banner-img" [src]="photo" (click)="navigateToPage('products',title, null)">
     </div>
 
     <ul class="best-of-categories">

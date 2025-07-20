@@ -21,6 +21,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 48px;
+  align-items: center;
 }
 
 .best-of-categories-img {
@@ -44,14 +45,12 @@
   color: var(--c2);
 }
 
-.best-of-banner {
-  background: var(--c1);
+.best-of-banner img {
   border-radius: 8px;
   width: 600px;
   height: 200px;
-  display: flex;
-  justify-content: space-between;
-  padding: 36px 0px 0px 36px;
+  object-fit: cover;
+  cursor: pointer;
 }
 
 .banner-info {
