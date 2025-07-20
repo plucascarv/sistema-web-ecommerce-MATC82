@@ -68,10 +68,28 @@ li {
   color: var(--c5);
 }
 
+/* TIPOGRAFIA */
+.font-1-l {
+  font: 700 1.5rem/1.125 'Roboto', sans-serif;
+}
+
+.font-1-s {
+  font: 400 .85rem/1 'Roboto', sans-serif;
+}
+
 /* UTILIDADES*/
 .container {
   box-sizing: border-box;
   max-width: 1480px;
   padding: 0 20px;
   margin: 0 auto;
+}
+
+.viewmore {
+  cursor: pointer;
+  color: var(--c2);
+}
+
+.viewmore:hover {
+  color: black;
 }

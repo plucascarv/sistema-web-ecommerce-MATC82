@@ -12,16 +12,6 @@
   align-items: center;
 }
 
-.banner-title {
-  font-weight: bold;
-}
-
-.banner-head span {
-  cursor: pointer;
-  font-size: .85rem;
-  color: var(--c2);
-}
-
 .banner-photo {
   width: 413px;
   height: 235px;
@@ -56,8 +46,6 @@
   background: var(--c1);
   border-radius: 50%;
   padding: 20px;
-  max-width: 120px;
-  max-width: 120px;
 }
 
 .product-img-jogos {

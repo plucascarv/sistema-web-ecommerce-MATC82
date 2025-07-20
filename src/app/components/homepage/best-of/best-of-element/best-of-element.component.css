@@ -13,6 +13,10 @@
   justify-content: space-between;
 }
 
+.best-of-head {
+  align-items: center;
+}
+
 .categories-item {
   gap: 18px;
 }
