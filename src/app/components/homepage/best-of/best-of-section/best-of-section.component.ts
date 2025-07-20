@@ -12,7 +12,7 @@ export class BestOfSectionComponent {
   elements = [
     {
       title: 'COMPUTADORES & NOTEBOOKS',
-      img: '',
+      img: '/best-of/banner1.png',
       categories: [
         {name: 'Macbook', qtd: 21, img: '/best-of/mac.webp'},
         {name: 'Desktops', qtd: 14, img: '/best-of/desktop.png'},
@@ -23,12 +23,7 @@ export class BestOfSectionComponent {
       ],
       products: [
         {name: "MacBook Air 14, 13 polegadas, 8GB RAM, 256GB", price:"4299,99", img:"/deal/front.jpg"}
-      ], // TODO: consumir esses elementos da api
-      banner: {
-        name: "AMD Crow Gamer PC",
-        extra: "Computador para aqueles que desafiam",
-        img: "/best-of/desktop.png"
-      } 
+      ]
     }
   ]
 }

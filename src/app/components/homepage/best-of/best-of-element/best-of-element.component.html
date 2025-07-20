@@ -1,18 +1,13 @@
 <!-- TODO: configurar rout outlet de navigate -->
 <div class="best-of container">
   <div class="best-of-head">
-    <h1>{{title}}</h1>
-    <span (click)="navigateToPage('products',title,null)" class="viewmore">Veja Mais</span> 
+    <h1 class="font-1-l">{{title}}</h1>
+    <span (click)="navigateToPage('products',title,null)" class="viewmore font-1-s">Veja Mais</span> 
   </div>
   
   <div class="best-of-top">
     <div class="best-of-banner">
-      <div class="banner-info">
-        <h2 class="banner-title">{{banner.name}}</h2>
-        <span class="banner-extra">{{banner.extra}}</span>
-        <button class="banner-button" (click)="navigateToPage('products',title,banner.name)">COMPRE AGORA</button>
-      </div>
-      <div><img class="banner-img" [src]="banner.img" [alt]="banner.name"></div>
+      <img class="banner-img" [src]="photo" (click)="navigateToPage('products',title, null)">
     </div>
 
     <ul class="best-of-categories">

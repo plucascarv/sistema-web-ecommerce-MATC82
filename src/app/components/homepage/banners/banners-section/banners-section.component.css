@@ -1,0 +1,12 @@
+.container.banners {
+  width: 100%;
+}
+
+.banners {
+  padding: 0;
+  margin-top: 24px;
+  margin-bottom: 48px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}

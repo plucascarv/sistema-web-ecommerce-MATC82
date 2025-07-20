@@ -13,11 +13,6 @@
   padding: 18px 24px;
 }
 
-.title {
-  color: var(--c0);
-  font-weight: bold;
-}
-
 .product {
   background: var(--c0);
   border-radius: 8px;
