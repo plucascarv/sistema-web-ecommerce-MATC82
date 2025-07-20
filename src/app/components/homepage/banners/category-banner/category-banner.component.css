@@ -54,3 +54,8 @@
   object-fit: contain;
   border-radius: 50%;
 }
+
+.product-title {
+  font-weight: bold;
+  font-size: 1.125rem;
+}
