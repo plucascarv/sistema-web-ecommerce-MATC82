@@ -25,9 +25,9 @@ export class BestOfSectionComponent {
         {name: "MacBook Air 14, 13 polegadas, 8GB RAM, 256GB", price:"4299,99", img:"/deal/front.jpg"}
       ], // TODO: consumir esses elementos da api
       banner: {
-        name: "AMD Crow Gamer PC",
-        extra: "Computador para aqueles que desafiam",
-        img: "/best-of/desktop.png"
+        name: "",
+        extra: "",
+        img: ""
       } 
     }
   ]

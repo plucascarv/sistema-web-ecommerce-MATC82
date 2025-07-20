@@ -1,0 +1,62 @@
+.banner {
+  display: flex;
+  flex-direction: column;
+  background: var(--c0);
+  border-radius: 8px;
+  padding: 24px 36px;
+  gap: 24px;
+}
+.banner-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.banner-title {
+  font-weight: bold;
+}
+
+.banner-head span {
+  cursor: pointer;
+  font-size: .85rem;
+  color: var(--c2);
+}
+
+.banner-photo {
+  width: 413px;
+  height: 235px;
+  background: var(--c1);
+  border-radius: 8px;
+}
+
+.banner-products {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px 124px;
+}
+
+.products-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.product-img-else {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  background: var(--c1);
+  border-radius: 50%;
+  padding: 20px;
+  max-width: 120px;
+  max-width: 120px;
+}
+
+.product-img-jogos {
+  max-width: 140px;
+  max-width: 140px;
+  object-fit: contain;
+  border-radius: 50%;
+}

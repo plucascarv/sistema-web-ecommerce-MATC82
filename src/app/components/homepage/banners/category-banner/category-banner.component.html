@@ -1,19 +1,24 @@
 <div class="banner">
   <div class="banner-head">
     <h1 class="banner-title">{{title}}</h1>
-    <span>Veja Mais</span> <!-- TODO: click rout navigate -->
+    <span [routerLink]="['products',title]">Veja Mais</span>
   </div>
 
   <div class="banner-photo"><img [src]="photo" alt=""></div>
 
   <hr>
 
-  <div class="banner-products"><ul>
+  <div><ul class="banner-products">
     @for (product of products; track $index) {
-      <li>
-        <img [src]="product.img" [alt]="product.name">
-        <h3>{{product.name}}</h3>
-        <span>{{product.qtd}} itens</span>
+      <li class="products-item" [routerLink]="['products',title,product.name]">
+        @if (title === "JOGOS") {
+          <img class="product-img-jogos" [src]="product.img" [alt]="product.name">
+        }
+        @if (title != "JOGOS") {
+          <img class="product-img-else" [src]="product.img" [alt]="product.name">
+        }
+        <h3 class="product-title">{{product.name}}</h3>
+        <span class="product-qtd">{{product.qtd}} itens</span>
       </li>
     }
   </ul></div>

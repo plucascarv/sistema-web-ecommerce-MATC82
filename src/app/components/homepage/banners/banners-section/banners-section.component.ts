@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { CategoryBannerComponent } from "../category-banner/category-banner.component";
 
 @Component({
   selector: 'app-banners-section',
-  imports: [CategoryBannerComponent],
+  imports: [CommonModule, CategoryBannerComponent],
   templateUrl: './banners-section.component.html',
   styleUrl: './banners-section.component.css'
 })
@@ -15,30 +16,30 @@ export class BannersSectionComponent {
       title: 'PERIFÉRICOS',
       photo: '',
       products: [
-        {name: 'Monitores', qtd: 28, img: '' },
-        {name: 'Mouses', qtd: 12, img: '' },
-        {name: 'Controles', qtd: 9, img: '' },
-        {name: 'Teclados', qtd: 30, img: '' },
+        {name: 'Monitores', qtd: 28, img: '/banners/perifericos/monitor.png' },
+        {name: 'Mouses', qtd: 12, img: '/banners/perifericos/mouse.png' },
+        {name: 'Controles', qtd: 9, img: '/banners/perifericos/controller.png' },
+        {name: 'Teclados', qtd: 30, img: '/banners/perifericos/keyboard.png' },
       ]
     },
     {
       title: 'GAMING',
       photo: '',
       products: [
-        {name: 'Desktops', qtd: 14, img: '' },
-        {name: 'Notebooks', qtd: 74, img: '' },
-        {name: 'Consoles', qtd: 8, img: '' },
-        {name: 'Portáteis', qtd: 9, img: '' },
+        {name: 'Desktops', qtd: 14, img: '/best-of/desktop.png' },
+        {name: 'Notebooks', qtd: 74, img: '/banners/gaming/note.png' },
+        {name: 'Consoles', qtd: 8, img: '/banners/gaming/console.png' },
+        {name: 'Portáteis', qtd: 9, img: '/banners/gaming/portable.png' },
       ]
     },
     {
       title: 'JOGOS',
       photo: '',
       products: [
-        {name: 'RPGs', qtd: 145, img: '' },
-        {name: 'Ação', qtd: 121, img: '' },
-        {name: 'Horror', qtd: 32, img: '' },
-        {name: 'Shooters', qtd: 81, img: '' },
+        {name: 'RPGs', qtd: 145, img: '/banners/jogos/rpg.jpg' },
+        {name: 'Ação', qtd: 121, img: '/banners/jogos/action.jpg' },
+        {name: 'Horror', qtd: 32, img: '/banners/jogos/horror.jpg' },
+        {name: 'Shooters', qtd: 81, img: '/banners/jogos/shooter.avif' },
       ]
     }
   ]
