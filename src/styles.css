@@ -91,5 +91,5 @@ li {
 }
 
 .viewmore:hover {
-  color: black;
+  color: var(--c3);
 }

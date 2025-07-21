@@ -43,17 +43,13 @@
   position: relative;
 }
 
-.supernav-lang-curr #language::before {
-  content: "";
-  border-radius: 50%;
-  width: 8px;
-  height: 8px;
-  position: absolute;
-}
-
 select {
   background: var(--c0);
   border: solid 2px var(--c1);
   border-radius: 8px;
   padding: 4px 8px;
+}
+
+.supernav-button-item:hover {
+  color: var(--c3);
 }
