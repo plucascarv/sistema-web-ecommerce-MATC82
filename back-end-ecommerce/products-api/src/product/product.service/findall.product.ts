@@ -15,6 +15,6 @@ export class findallProducts{
             throw new Error(error)
         }
     }
-    console.error("produtos not found")
+    console.error("products not found")
     }
 } 
