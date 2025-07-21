@@ -19,8 +19,7 @@ li {
 
 .new-list {
   display: flex;
-  justify-content: space-between;
-  gap: 8px;
+  gap: 48px;
 }
 
 .list-item {
@@ -51,9 +50,9 @@ li {
   padding: 12px;
 }
 
-.item-photo, .item-photo img {
-  height: 230px;
-  width: 300px;
+.item-photo img {
+  height: 250px;
+  max-width: 345px;
 }
 
 .item-photo img {

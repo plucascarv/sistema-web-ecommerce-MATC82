@@ -13,6 +13,10 @@
   align-items: center;
 }
 
+.nav-label {
+  cursor: pointer;
+}
+
 .nav-start {
   gap: 80px;
 }
@@ -61,6 +65,13 @@
   display: flex;
   flex-direction: column;
   margin-right: 24px;
+}
+
+.perfil div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 6px;
 }
 
 .perfil span, .cart-info span:first-child {

@@ -1,7 +1,7 @@
 <nav class="nav container">
 
   <div class="nav-start">
-    <div class="nav-label">
+    <div class="nav-label" routerLink="">
       <img src="/mercury.png" alt="" class="logo">
       <h1>MER<br><strong>CURIO</strong></h1>
     </div>
@@ -24,7 +24,11 @@
 
     <div class="perfil">
       <span>BEM-VINDO</span>
-      <button><strong>ENTRAR / CADASTRAR</strong></button>
+      <div>
+        <button routerLink="login"><strong>ENTRAR</strong></button>
+        <p> / </p>
+        <button routerLink="register"><strong>CADASTRAR</strong></button>
+      </div>
     </div>
 
     <div class="cart">

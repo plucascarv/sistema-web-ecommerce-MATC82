@@ -22,6 +22,10 @@ export class BestOfSectionComponent {
         {name: 'Usados', qtd: 45, img: '/best-of/used.webp'}
       ],
       products: [
+        {name: "MacBook Air 14, 13 polegadas, 8GB RAM, 256GB", price:"4299,99", img:"/deal/front.jpg"},
+        {name: "MacBook Air 14, 13 polegadas, 8GB RAM, 256GB", price:"4299,99", img:"/deal/front.jpg"},
+        {name: "MacBook Air 14, 13 polegadas, 8GB RAM, 256GB", price:"4299,99", img:"/deal/front.jpg"},
+        {name: "MacBook Air 14, 13 polegadas, 8GB RAM, 256GB", price:"4299,99", img:"/deal/front.jpg"},
         {name: "MacBook Air 14, 13 polegadas, 8GB RAM, 256GB", price:"4299,99", img:"/deal/front.jpg"}
       ]
     }

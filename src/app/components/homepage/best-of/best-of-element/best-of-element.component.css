@@ -8,7 +8,7 @@
   margin-top: 24px;
 }
 
-.best-of-top, .categories-item, .item-info, .best-of-head {
+.best-of-top, .categories-item, .item-info, .best-of-head, .best-of-products-list {
   display: flex;
   justify-content: space-between;
 }
