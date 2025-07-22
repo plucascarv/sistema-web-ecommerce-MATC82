@@ -1,0 +1,47 @@
+<section class="container main">
+  <div class="gallery">
+    <img class="gallery-main" [src]="main_img">
+
+    <ul class="gallery-list">
+      @for (img of product.images; track $index) {
+        <li class="list-item" (click)="selectIMG(img)"><img class="item-img" [src]="img"></li>
+      }
+    </ul>
+  </div>
+
+  <div class="info">
+    <h1 class="font-1-l">{{product.name}}</h1>
+    <p class="price font-1-l c2">R${{product.price}}</p>
+
+    <ul class="info-features">
+      @for (feature of features; track $index) {
+        <li>{{feature}}</li>
+      }
+    </ul>
+
+    <p class="shipping">FRETE GRÁTIS</p>
+    <hr>
+
+    <ul class="info-socials">
+      @for (social of socials; track $index) {
+        <li><img [src]="social"></li>
+      }
+    </ul>
+  </div>
+
+  <div class="payment">
+    <div class="cart">
+      <span>VALOR TOTAL:</span>
+      <h1>R${{product.price}}</h1>
+    </div>
+
+    <div class="support">
+      <span class="hotline">Suporte 24/7</span>
+      <p class="font-1-l">+55 (71) 99999-9999</p>
+    </div>
+
+    <span>Envio Nacional</span>
+  </div>
+</section>
+
+<section class="container together"></section>

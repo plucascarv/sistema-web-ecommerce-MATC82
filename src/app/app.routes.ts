@@ -1,11 +1,16 @@
 import { Routes } from '@angular/router';
 import { HomeComponent } from './components/homepage/home/home.component';
+import { SingleproductComponent } from './components/singleproductpage/singleproduct.component';
 
 export const routes: Routes = [
-  
+
   {
     path: '',
     component: HomeComponent
+  },
+  {
+    path: 'product/:id',
+    component: SingleproductComponent
   },
   {
     path: 'login',
