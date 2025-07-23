@@ -12,6 +12,7 @@ import { ProductService } from '../../product.service';
 })
 export class SingleproductComponent {
   product!: Product;
+  related_products!:Product[];
   main_img!:string;
   features:string[] = ["lorem ipsum", "lorem ipsum", "lorem ipsum"]
   socials:string[] = [
@@ -29,16 +30,28 @@ export class SingleproductComponent {
     }
   }
 
-  loadProduct(id:string) {
+  loadProduct(id:string):void {
     this.productService.find(id).subscribe({
       next: (product) => {
         this.product = product;
         this.main_img = this.product.images[0];
+        this.loadRelated(product.category)
       },
       error: (e) => {
         console.error(e);
       }
     });
+  }
+
+  loadRelated(category:string):void {
+    this.productService.getByCategory(category, 5).subscribe({
+      next: (products) => {
+        this.related_products = products.filter(p => p.name !== this.product.name)
+      },
+      error: (e) => {
+        console.error(e);
+      }
+    })
   }
 
   selectIMG(img: string) {

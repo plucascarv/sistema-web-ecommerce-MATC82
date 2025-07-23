@@ -1,10 +1,10 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
-import { AdComponent } from '../../ad/ad.component';
 import { RouterLink } from '@angular/router';
+import { AdService } from '../../../ad.service';
 
 @Component({
   selector: 'app-day-deal',
-  imports: [AdComponent, RouterLink],
+  imports: [RouterLink],
   templateUrl: './day-deal.component.html',
   styleUrl: './day-deal.component.css'
 })
@@ -12,8 +12,12 @@ export class DayDealComponent implements OnInit, OnDestroy{
   promotionEnd: Date = new Date(new Date().setHours(23,59,99,999));
   timeLeft:string="";
   private timerInterval:any;
+  ads!:{name:string, img:string}[];
+
+  constructor(private adService:AdService) {}
 
   ngOnInit(): void {
+    this.ads = this.adService.getRandomAds(2);
     this.updateTimer();
     this.timerInterval = setInterval(() => {
       this.updateTimer();

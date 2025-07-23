@@ -44,4 +44,27 @@
   </div>
 </section>
 
-<section class="container together"></section>
+<section class="container description">
+  <h1 class="font-1-l">DESCRIÇÂO</h1>
+  <p>{{product.description}}</p>
+</section>
+
+<section class="container related">
+  <h1 class="font-1-l">PRODUTOS RELACIONADOS</h1>
+  <ul class="related-list">
+    @for (item of related_products; track $index) {
+      <li>
+        <img [src]="item.images[0]" [alt]="item.name"/>
+        <h3>{{item.name}}</h3>
+        <p>{{item.price}}</p>
+        <span>FRETE GRÁTIS</span>
+        @if (item.quantity > 0) {
+          <span class="stock"><img src="" alt="">Disponível</span>
+        }
+        @if (item.quantity < 0) {
+          <span class="stock"><img src="" alt="">Indisponível</span>
+        }
+      </li>
+    }
+  </ul>
+</section>

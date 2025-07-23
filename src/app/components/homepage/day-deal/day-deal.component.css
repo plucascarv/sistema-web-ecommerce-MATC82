@@ -164,5 +164,11 @@ progress::-webkit-progress-value {
 .ads {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 8px;
+}
+
+.ads img {
+  width: 100%;
+  object-fit: contain;
+  border-radius: 8px;
 }

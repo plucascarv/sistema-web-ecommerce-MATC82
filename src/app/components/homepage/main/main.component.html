@@ -34,18 +34,8 @@
   </div>
 
   <div class="ads">
-    <app-ad
-      type="type1"
-      brand="MARCA"
-      name="Nome Deste Produto">
-    </app-ad>
-
-    <app-ad
-      type="type2"
-      brand="MARCA"
-      name="NOME DO PRODUTO"
-      price="R$000,00"
-      link="./">
-    </app-ad>
+    @for (ad of ads; track $index) {
+      <img [src]="ad.img" [alt]="ad.name">
+    }
   </div>
 </section>

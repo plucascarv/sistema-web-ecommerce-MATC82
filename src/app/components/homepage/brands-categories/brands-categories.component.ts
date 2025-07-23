@@ -24,10 +24,10 @@ export class BrandsCategoriesComponent {
   ]
 
   categories = [
-    {name: "Notebooks", img:'/categories/notebooks.png'},
-    {name: "PCs Gamer", img:'/categories/pcs.png'},
-    {name: "Headsets", img:'/categories/headsets.png'},
-    {name: "Monitores", img:'/categories/monitores.jpg'}
+    {name: "Notebook", img:'/categories/notebooks.png'},
+    {name: "Desktop", img:'/categories/pcs.png'},
+    {name: "Headset", img:'/categories/headsets.png'},
+    {name: "Monitor", img:'/categories/monitores.jpg'}
   ]
 
   navigateToPage(item:string) {

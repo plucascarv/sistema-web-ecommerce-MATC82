@@ -1,15 +1,21 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { AdService } from '../../../ad.service';
 import { Router } from '@angular/router';
-import { AdComponent } from '../../ad/ad.component';
 
 @Component({
   selector: 'app-main',
-  imports: [AdComponent],
+  imports: [],
   templateUrl: './main.component.html',
   styleUrl: './main.component.css'
 })
 export class MainComponent {
-  constructor(private router: Router) {}
+  ads!:{name:string, img:string}[];
+
+  constructor(private router: Router, private adService:AdService) {}
+
+  ngOnInit() {
+    this.ads = this.adService.getRandomAds(2);
+  }
 
   categories = ['Notebooks', 'Desktops', 'Controles', 'Teclados', 'Mouses e Mouspeads', 'Monitores', 'Acessórios', 'Jogos', 'Action Figures', 'VR', 'Peças', 'Armazenamento USB'];
 

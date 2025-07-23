@@ -113,3 +113,9 @@
   height: 100%;
   gap: 12px;
 }
+
+.ads img {
+  width: 100%;
+  border-radius: 8px;
+  cursor: pointer;
+}
