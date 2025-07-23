@@ -2,17 +2,17 @@
 <div class="best-of container">
   <div class="best-of-head">
     <h1 class="font-1-l">{{title}}</h1>
-    <span (click)="navigateToPage('products',title,null)" class="viewmore font-1-s">Veja Mais</span> 
+    <span [routerLink]="['allproducts']" class="viewmore font-1-s">Veja Mais</span> 
   </div>
   
   <div class="best-of-top">
     <div class="best-of-banner">
-      <img class="banner-img" [src]="photo" (click)="navigateToPage('products',title, null)">
+      <img class="banner-img" [src]="photo" [routerLink]="['allproducts']">
     </div>
 
     <ul class="best-of-categories">
       @for (item of categories; track $index) {
-        <li (click)="navigateToPage('products',title,item.name)" class="categories-item">
+        <li [routerLink]="['allproducts']" class="categories-item">
           <div class="item-info">
             <h3 class="best-of-categories-title">{{item.name}}</h3>
             <span>{{item.qtd}} itens</span>
@@ -28,7 +28,7 @@
 
   <div class="best-of-products"><ul class="best-of-products-list">
     @for (product of products; track $index) {
-      <li class="products-item">
+      <li class="products-item" [routerLink]="['product',product.name]">
         <div>
           <div ><img class="products-img" [src]="product.img" [alt]="product.name"></div>
           <h2 class="products-title">{{product.name}}</h2>

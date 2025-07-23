@@ -1,16 +1,16 @@
 <div class="banner">
   <div class="banner-head">
     <h1 class="font-1-l">{{title}}</h1>
-    <span [routerLink]="['products',title]" class="font-1-s viewmore">Veja Mais</span>
+    <span [routerLink]="['allproducts']" class="font-1-s viewmore">Veja Mais</span>
   </div>
 
-  <div class="banner-photo" [routerLink]="['product','1']"><img [src]="photo" alt=""></div>
+  <div class="banner-photo" [routerLink]="['product']"><img [src]="photo" alt=""></div>
 
   <hr>
 
   <div><ul class="banner-products">
     @for (product of products; track $index) {
-      <li class="products-item" [routerLink]="['products',title,product.name]">
+      <li class="products-item" [routerLink]="['allproducts']">
         @if (title === "JOGOS") {
           <img class="product-img-jogos" [src]="product.img" [alt]="product.name">
         }

@@ -4,32 +4,41 @@
 
     <ul>
       @for (item of categories; track $index) {
-        <li (click)="navigateToPage(item)">{{item}}</li>
+        <li routerLink="['allproducts']">{{item}}</li>
       }
     </ul>
   </nav>
 
   <div class="produtos-destaque">
-    <div class="produto-principal">
-      <h2><strong>Nome do</strong><br>Produto Principal</h2>
-      <span>Pequeno texto de descrição das características e benefícios deste produto</span>
-      <button>COMPRAR</button>
+    <div class="produto-principal" >
+      <div class="principal-info">
+        <h2><strong>WOOTING</strong><br>60HE+, Teclado Gamer</h2>
+        <span>Teclado gamer focado no cenário profissional de esportes. A melhor qualidade! Exclusivo na Mercurio.</span>
+        <button [routerLink]="['product']">COMPRAR</button>
+      </div>
+      <div class="principal-img">
+        <img src="/mock-product/w2.webp" alt="">
+      </div>
     </div>
 
-    <div class="produto-secundario secundario-1">
-      <div class="sec-text">
-        <h3>Nome do Produto</h3>
-        <span>por <span class="price">R$000,00</span></span>
+    <div class="produto-secundario">
+      <div class="sec-info">
+        <h3>Dualsense Controller</h3>
+        <span>por <span class="price">R$329,99</span></span>
+        <button routerLink="['product']">SAIBA MAIS</button>
       </div>
-      <button>SAIBA MAIS</button>
+
+      <img src="/mock-product/p4.jpg" alt="">
     </div>
 
-    <div class="produto-secundario secundario-2">
-      <div class="sec-text">
+    <div class="produto-secundario">
+      <div class="sec-info">
         <h3>Nome do Produto</h3>
         <span>por <span class="price">R$000,00</span></span>
+        <button>SAIBA MAIS</button>
       </div>
-      <button>SAIBA MAIS</button>
+
+      <img src="" alt="">
     </div>
   </div>
 

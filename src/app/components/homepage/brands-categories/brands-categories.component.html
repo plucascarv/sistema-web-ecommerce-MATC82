@@ -2,7 +2,7 @@
   <div class="brands">
     <div class="intro">
       <h2 class="font-1-l">PRINCIPAIS MARCAS</h2>
-      <a (click)="navigateToPage('marcas')" class="viewmore font-1-s">View All</a>
+      <a class="viewmore font-1-s">View All</a>
     </div>
 
     <ul>
@@ -15,12 +15,12 @@
   <div class="categories">
     <div class="intro">
       <h2 class="font-1-l">PRINCIPAIS CATEGORIAS</h2>
-      <a (click)="navigateToPage('categorias')" class="viewmore font-1-s">View All</a>
+      <a [routerLink]="['allproducts']" class="viewmore font-1-s">View All</a>
     </div>
 
     <ul>
       @for (category of categories; track $index) {
-        <li (click)="navigateToPage(category.name)">
+        <li [routerLink]="['allproducts']">
           <img [src]="category.img" [alt]="category.name">
           <p>{{category.name}}</p>
         </li>

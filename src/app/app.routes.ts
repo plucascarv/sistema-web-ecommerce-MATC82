@@ -9,6 +9,10 @@ export const routes: Routes = [
     component: HomeComponent
   },
   {
+    path: 'product',
+    component: SingleproductComponent
+  },
+  {
     path: 'product/:id',
     component: SingleproductComponent
   },
