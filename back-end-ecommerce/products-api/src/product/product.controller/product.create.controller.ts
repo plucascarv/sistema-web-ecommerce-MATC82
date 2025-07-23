@@ -1,3 +1,6 @@
+/* eslint-disable prettier/prettier */
+/* eslint-disable @typescript-eslint/no-unsafe-return */
+/* eslint-disable prettier/prettier */
 import { Post,Controller,Body } from "@nestjs/common";
 import { productCreateService } from "../product.service/create.product.service";
 import { CreateProductDto } from "../product.dtos/create.product.dtos";
