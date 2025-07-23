@@ -16,8 +16,8 @@ export class ProductService {
     return this.http.get<Product[]>(this.API_URL+'/products')
   }
 
-  getByCategory(category:string, limit:number = 5):Observable<Product[]> {
-    return this.http.get<Product[]>(`${this.API_URL}?categoria=${category}&_limit=${limit}`)
+  getByCategory(category:String):Observable<Product[]> {
+    return this.http.get<Product[]>(this.API_URL+'/products/'+category);
   }
 
   find(param:string|Date|number):Observable<Product> {

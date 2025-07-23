@@ -1,11 +1,14 @@
-.main {
+.main, .related {
   background: var(--c0);
   border-radius: 8px;
   padding: 24px 36px;
   margin-top: 24px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 3fr 2fr 1.5fr;
+  gap: 18px;
 }
 
 .gallery {
@@ -17,18 +20,17 @@
 }
 
 .gallery-main {
-  height: 550px;
-  max-width: 520px;
+  height: 500px;
+  max-width: 500px;
   object-fit: contain;
 }
 
 .gallery-list {
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 8px;
+  gap: 12px;
 }
 
 .item-img {
@@ -40,9 +42,10 @@
 .info {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 24px;
   justify-content: start;
   align-items: start;
+  padding-top: 24px;
 }
 
 .info-price {
@@ -65,6 +68,38 @@
   cursor: auto;
   font-size: .95rem;
   font-family: "Poppins", sans-serif;
+  max-width: 55ch;
+}
+
+.info-promo {
+  display: flex;
+  align-items: center;
+  background: var(--c1);
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.info-promo div {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.info-promo li {
+  font-size: .85rem;
+}
+
+.info-promo li + li {
+  margin-top: 8px;
+}
+
+.info-promo p {
+  font-size: .75rem;
+}
+
+.info-promo img {
+  height: 64px;
+  padding-right: 36px;
 }
 
 .shipping {
@@ -84,7 +119,7 @@
 }
 
 .info-socials li {
-  background: var(--c2);
+  background: var(--c1);
   border-radius: 50%;
   padding: 12px;
 }
@@ -92,4 +127,192 @@
 .info-socials img {
   height: 16px;
   width: 16px;
+}
+
+.payment {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.cart, .support {
+  background: var(--c1);
+  border-radius: 8px;
+  padding: 24px 36px;
+}
+
+.cart {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.cart p {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  font-size: .85rem;
+}
+
+.cart p img {
+  height: 16px;
+  display: inline-block;
+}
+
+.quantity {
+   display: flex;
+   justify-content: space-between;
+   background: var(--c0);
+   border-radius: 8px;
+   padding: 16px;
+}
+
+.quantity p, .quantity button {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.cart-add {
+  background: var(--c3);
+  border-radius: 8px;
+  padding: 16px;
+  width: 100%;
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--c0);
+  margin-top: 16px;
+}
+
+.methods {
+  display: flex;
+  gap: 6px;
+}
+
+.methods img {
+  height: 36px;
+}
+
+.support {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.hotline {
+  color: var(--c0);
+  background: var(--c2);
+  max-width: max-content;
+  border-radius: 8px;
+  padding: 12px;
+  font-weight: bold;
+  font-size: .95rem;
+}
+
+.support a:hover {
+  color: var(--c3);
+}
+
+.delivery {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.delivery img {
+  height: 16px;
+  width: 16px;
+}
+
+.delivery img:last-child {
+  border-radius: 50%;
+}
+
+.description {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 16px;
+  padding: 0;
+  align-items: center;
+  padding: 0;
+  margin-top: 24px;
+}
+
+.description-info {
+  background: var(--c0);
+  border-radius: 8px;
+  padding: 24px 36px;
+}
+
+.description-txt {
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.2;
+  margin-top: 24px;
+}
+
+.ads {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.ads img {
+  width: 100%;
+  border-radius: 8px;
+  max-height: 232px;
+  cursor: pointer;
+  object-fit: cover;
+}
+
+.related-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.list-product {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+}
+
+.list-product img:first-child {
+  height: 200px;
+  width: 200px;
+  object-fit: contain;
+}
+
+.list-product h3 {
+  font-weight: bold;
+  font-size: 1rem;
+  max-width: 25ch;
+}
+
+.list-product p {
+  font-weight: bold;
+  font-size: 1.25rem;
+  color: var(--c5);
+}
+
+.shipping {
+  font-size: .75rem;
+  color:var(--c3);
+  text-transform: uppercase;
+}
+
+.stock {
+  font-size: .85rem;
+  display: flex;
+  align-items: center;
+  max-height: 10px;
+}
+
+.stock img {
+  display: inline-block;
+  width: 16px !important;
+}
+
+.stock, .products-price {
+  margin-top: 8px;
 }

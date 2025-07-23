@@ -11,7 +11,7 @@
 
   <div class="info">
     <h1 class="font-1-l">{{product.name}}</h1>
-    <p class="price font-1-l c2">R${{product.price}}</p>
+    <p class="price font-1-l c3">R${{product.price}}</p>
 
     <ul class="info-features">
       @for (feature of features; track $index) {
@@ -20,7 +20,18 @@
     </ul>
 
     <p class="shipping">FRETE GRÁTIS</p>
-    <hr>
+
+    <div class="info-promo">
+      <img src="/icons/present.svg" alt="">
+      <div>
+        <ul>
+          <li>Na compra de <span class="c4">02</span> produtos, ganhe um <strong>Brinde Especial</strong>!</li>
+          <li>Na compra de <span class="c4">05</span> produtos, ganhe um <strong>Desconto de até 45%</strong>!</li>
+        </ul>
+
+        <p class="c2">A promoção vai até: 23h00, 29/07/25</p>
+      </div>
+    </div>
 
     <ul class="info-socials">
       @for (social of socials; track $index) {
@@ -31,35 +42,65 @@
 
   <div class="payment">
     <div class="cart">
-      <span>VALOR TOTAL:</span>
-      <h1>R${{product.price}}</h1>
+      <span class="font-1-s c2">VALOR TOTAL:</span>
+      <h1 class="font-1-l c5">R${{product.price}}</h1>
+      <p><img src="/payment/pagseguro.svg" alt=""> Em até 12x sem juros</p>
+      
+      <hr>
+
+      <p class="stock"><img src="/icons/check.svg" alt="">Produto disponível</p>
+
+      <form (ngSubmit)="onSubmit()">
+        <div class="quantity">
+          <button (click)="plus()">+</button>
+          <p>{{cart_quantity}}</p>
+          <button (click)="minus()">-</button>
+        </div>
+
+        <button class="cart-add" type="submit" [disabled]="cart_quantity>product.quantity">Adicionar ao Carrinho</button>
+      </form>
+
+      <hr>
+
+      <span class="font-1-s c2">Compra garantida</span>
+      <ul class="methods">
+        @for (pay of payments; track $index) {
+          <li><img [src]="pay"></li>
+        }
+      </ul>
     </div>
 
     <div class="support">
       <span class="hotline">Suporte 24/7</span>
-      <p class="font-1-l">+55 (71) 99999-9999</p>
+      <a href="tel:+5571999999999" class="font-1-l">+55 (71) 99999-9999</a>
     </div>
 
-    <span>Envio Nacional</span>
+    <span class="delivery"><img src="/icons/shipping.svg">Envio <strong>Nacional</strong><img src="/brazil.png"></span>
   </div>
 </section>
 
 <section class="container description">
-  <h1 class="font-1-l">DESCRIÇÂO</h1>
-  <p>{{product.description}}</p>
+  <div class="description-info">
+    <h1 class="font-1-l">DESCRIÇÃO</h1>
+    <p class="description-txt">{{product.description}}</p>
+  </div>
+
+  <div class="ads">
+    <img src="/ads/ad2.png" alt="">
+  </div>
 </section>
 
 <section class="container related">
   <h1 class="font-1-l">PRODUTOS RELACIONADOS</h1>
   <ul class="related-list">
     @for (item of related_products; track $index) {
-      <li>
+      <li class="list-product" [routerLink]="['/products',item.name]">
         <img [src]="item.images[0]" [alt]="item.name"/>
         <h3>{{item.name}}</h3>
         <p>{{item.price}}</p>
-        <span>FRETE GRÁTIS</span>
+        <span class="shipping">FRETE GRÁTIS</span>
         @if (item.quantity > 0) {
-          <span class="stock"><img src="" alt="">Disponível</span>
+          <span class="stock"><img src="/icons/check.svg" alt="">Disponível</span>
         }
         @if (item.quantity < 0) {
           <span class="stock"><img src="" alt="">Indisponível</span>
