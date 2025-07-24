@@ -1,0 +1,61 @@
+<section class="container allproducts">
+  <div class="extra">
+    <img src="/allproducts/ap1.png">
+    <img src="/allproducts/ap2.png">
+    <img src="/allproducts/ap3.png">
+  </div>
+
+  <div class="top-categories">
+    <h1 class="font-1-l">PRINCIPAIS CATEGORIAS</h1>
+    <ul class="categories-list">
+      @for (category of categories; track $index) {
+        <li class="categories-list-item" (click)="select(category.name)">
+          <div class="category-info">
+            <h3>{{category.name}}</h3>
+            <span class="font-1-s c2">{{category.quantity}} itens</span>
+          </div>
+
+          <img [src]="category.img" [alt]="category.name">
+        </li>
+      }
+    </ul>
+  </div>
+
+  <div class="products">
+    <div class="sidebar">
+      <div class="products-filter">
+        <span class="selected">{{selected}}</span>
+        <p>Categorias:</p>
+        <ul class="filter-list">
+          <li (click)="select('Todas Categorias')">Todas Categorias</li>
+          @for (category of categories; track $index) {
+            <li (click)="select(category.name)">{{category.name}}</li>
+          }
+        </ul>
+      </div>
+
+      <div class="ads">
+        @for (ad of ads; track $index) {
+          <img [src]="ad.img">
+        }
+      </div>
+    </div>
+
+    <div><ul class="products-list">
+      @for (item of items; track $index) {
+        <li [routerLink]="['product',item.name]">
+          <img [src]="item.images[0]" [alt]="item.name"/>
+          <h3>{{item.name}}</h3>
+          <p>{{item.price}}</p>
+          <span class="shipping">FRETE GRÁTIS</span>
+          @if (item.quantity > 0) {
+            <span class="stock"><img src="/icons/check.svg" alt="">Disponível</span>
+          }
+          @if (item.quantity < 0) {
+            <span class="stock"><img src="" alt="">Indisponível</span>
+          }
+        </li>
+      }
+    </ul></div>
+  </div>
+</section>
