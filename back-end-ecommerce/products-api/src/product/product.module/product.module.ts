@@ -9,12 +9,12 @@ import { findallProducts } from '../product.service/findall.product';
 import { productsFindallController } from '../product.controller/findall.product.controller';
 import { productFindByCategoryService } from '../product.service/findcategory.product.service';
 import { productFindByNameService } from '../product.service/product.findByName.service';
-import { ProductFindByNammeController } from '../product.controller/findbyname.product.service';
+import { ProductFindByNameController } from '../product.controller/findbyname.product.service';
 import { ProductFindCategoryController } from '../product.controller/findcategory.product.controller';
 
 @Module({
 imports: [    ],
-    controllers: [productCreateController,productsFindallController, ProductFindByNammeController, ProductFindCategoryController],
+    controllers: [productCreateController,productsFindallController, ProductFindByNameController, ProductFindCategoryController],
     providers: [productCreateService,PrismaService,findallProducts, productFindByCategoryService, productFindByNameService],
 })
 export class productModule {}

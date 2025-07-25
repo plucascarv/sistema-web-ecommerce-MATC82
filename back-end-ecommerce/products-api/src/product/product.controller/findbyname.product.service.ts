@@ -1,13 +1,13 @@
 /* eslint-disable prettier/prettier */
-import { Controller, Get, Query } from '@nestjs/common';
+import { Controller, Post, Body } from '@nestjs/common';
 import { productFindByNameService } from '../product.service/product.findByName.service';
 
 @Controller('products-findbyname')
-export class ProductFindByNammeController {
+export class ProductFindByNameController {
   constructor(private readonly findByNameService: productFindByNameService) {}
 
-  @Get('by-name')
-  async getByName(@Query('name') name: string) {
+  @Post('by-name')
+  async getByName(@Body('name') name: string) {
     return this.findByNameService.findByName(name);
   }
 }
