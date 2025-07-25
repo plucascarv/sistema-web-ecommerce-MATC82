@@ -1,3 +1,6 @@
+/* eslint-disable prettier/prettier */
+/* eslint-disable @typescript-eslint/no-unused-vars */
+/* eslint-disable prettier/prettier */
 import { PrismaService } from "./prisma.service";
 import { error } from "console";
 import { Injectable } from "@nestjs/common";

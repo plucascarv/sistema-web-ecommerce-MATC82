@@ -1,3 +1,6 @@
+/* eslint-disable prettier/prettier */
+/* eslint-disable @typescript-eslint/no-unused-vars */
+/* eslint-disable prettier/prettier */
 import { Get,Controller, Post } from "@nestjs/common";
 import { findallProducts } from "../product.service/findall.product";
 
